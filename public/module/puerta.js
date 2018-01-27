@@ -3,8 +3,8 @@ function puerta()
     var estado = document.getElementById('inputEstado').value;
     var ubicacion = document.getElementById('inputUbicacion').value;
 
-    alert(estado);
-    alert(ubicacion);
+    alert('ESTADO' + estado);
+    alert('ubicacion' + ubicacion);
 
     function crearPuerta(puerta){    
         
