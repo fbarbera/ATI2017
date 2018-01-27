@@ -1,6 +1,11 @@
 function puerta()
 {
-    var puerta = document.getElementById('id_puerta');
+    var estado = document.getElementById('inputEstado').value;
+    var ubicacion = document.getElementById('inputUbicacion').value;
+
+    alert(estado);
+    alert(ubicacion);
+
     function crearPuerta(puerta){    
         
     //creapuerta

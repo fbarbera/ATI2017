@@ -21,7 +21,7 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
     <!--<script defer type="text/javascript" src="./functions/index.js"></script>-->
-    <script defer type="text/javascript" src="./module/main.js"></script>
+    <script defer type="text/javascript" src="./module/puerta.js"></script>
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 900px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -80,18 +80,18 @@
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-user bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="id_puerta" name="name" type="text" placeholder="Ubicacion" class="form-control">
+                                  <input id="inputUbicacion" name="name" type="text" placeholder="Ubicacion" class="form-control">
                               </div>
                           </div>
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="id_estado" name="puerta" type="text" placeholder="Estado" class="form-control">
+                                  <input id="inputEstado" name="puerta" type="text" placeholder="Estado" class="form-control">
                               </div>
                           </div>
                           <div class="form-group">
                               <div class="col-md-12 text-center">
-                                  <button type="submit" class="btn btn-primary btn-lg" onclick="main()">Aceptar</button>
+                                  <button type="submit" class="btn btn-primary btn-lg" onclick="puerta()">Aceptar</button>
                               </div>
                           </div>
                       </fieldset>

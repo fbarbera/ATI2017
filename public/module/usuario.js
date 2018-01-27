@@ -1,12 +1,13 @@
 function usuario()
 {
-    var Ausuario = document.getElementById('inputAltaUsuario').value;
+    var Ausuario = document.getElementById('inputUsuario').value;
 
 
-    alert('asdfasdfvasdvasdsda' + Ausuario);
+    alert('llego' + Ausuario);
 
 
-   /* function crearUsuario(usuario){    
+
+   function crearUsuario(usuario){    
         
     //creausuario
 
@@ -20,5 +21,5 @@ function usuario()
     function deleteUsuario(usuairo){
         //deleteuser
     }
-*/
+
 }
