@@ -21,7 +21,7 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
     <!--<script defer type="text/javascript" src="./functions/index.js"></script>-->
-    <script defer type="text/javascript" src="./module/usuario.js"></script>
+    <script defer type="text/javascript" src="./module/permiso.js"></script>
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 900px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -78,23 +78,23 @@
               <div class="well well-sm">
                   <form class="form-horizontal" method="post">
                       <fieldset>
-                          <legend class="text-center header">Alta Usuario</legend>
+                          <legend class="text-center header">Alta Permiso</legend>
 
                           <div class="form-group">
                               <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-user bigicon"></i></span>
                               <div class="col-md-8">
-                                  <input id="inputUsuario" name="name" type="text" placeholder="Nombre" class="form-control">
+                                  <input id="inputUsuPerm" name="name" type="text" placeholder="Nombre" class="form-control">
                               </div>
                           </div>
-                          <!--<div class="form-group">
-                              <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                              <div class="col-md-8">
-                                  <input id="id_puerta" name="puerta" type="text" placeholder="Puerta" class="form-control">
-                              </div>-->
+                          <div class="form-group">
+                          <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                          <div class="col-md-8">
+                              <input id="inputDoorPerm" name="puerta" type="text" placeholder="Puerta" class="form-control">
+                          </div>
                           </div>
                           <div class="form-group">
                               <div class="col-md-12 text-center">
-                                  <button type="submit" class="btn btn-primary btn-lg" onclick="usuario()">Aceptar</button>
+                                  <button type="submit" class="btn btn-primary btn-lg" onclick="permiso()">Aceptar</button>
                               </div>
                           </div>
                       </fieldset>
