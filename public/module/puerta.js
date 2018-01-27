@@ -1,6 +1,18 @@
-function abmPuerta()
+function abmPuerta(accion)
 {
-    alert("Carga js")
+    alert(accion);
+    switch(accion) {
+        case 1:
+            crearPuerta();
+            break;
+        case 2:
+            updatePuerta();
+            break;
+        case 3:
+            deletePuerta();
+            break;
+    }
+
     var estado = document.getElementById('inputEstado').value;
     var ubicacion = document.getElementById('inputUbicacion').value;
 
@@ -8,17 +20,18 @@ function abmPuerta()
     alert(ubicacion);
 
     function crearPuerta(puerta){    
-        
+       alert('crear'); 
     //creapuerta
 
     }
 
     function updatePuerta(puerta){
-
+        alert('update'); 
     //UpdatePuerta
     }
 
     function deletePuerta(puerta){
+        alert('delete'); 
         //deletepuerta
     }
 
