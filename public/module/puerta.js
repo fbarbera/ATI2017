@@ -11,7 +11,7 @@ function abmPuerta(accion)
         case 3:
             deletePuerta();
             break;
-    }
+}
 
     var estado = document.getElementById('inputEstado').value;
     var ubicacion = document.getElementById('inputUbicacion').value;

@@ -62,3 +62,5 @@ database.rules.json
 functions/package.json
 functions/index.js
 .firebaserc
+y/404.html
+y/index.html
