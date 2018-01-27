@@ -24,13 +24,26 @@ function setupMiddlewares(app) {
 const app = express();
 // Setup application middlewares
 setupMiddlewares(app);
-alert($Id_usuario);
 // Define routes!
-app.put('/admin/puerta/:id_puerta', doorsControllers.update);
-app.post('/admin/puerta/:', doorsControllers.create);
-app.get('/admin/puerta/', doorsControllers.list);
-app.get('/admin/puerta/:id_puerta', doorsControllers.get);
-app.delete('/admin/puerta/:id_puerta', doorsControllers.remove);
+
+app.put('/admin/acceso/:id_acceso', acceso_controllers.update);
+app.post('/admin/acceso/:', acceso_controllers.create);
+app.get('/admin/acceso/', acceso_controllers.list);
+app.get('/admin/acceso/:id_acceso', acceso_controllers.get);
+app.delete('/admin/acceso/:id_acceso', acceso_controllers.remove);
+
+
+app.put('/admin/puerta/:id_puerta', doors_ontrollers.update);
+app.post('/admin/puerta/:', doors_ontrollers.create);
+app.get('/admin/puerta/', doors_ontrollers.list);
+app.get('/admin/puerta/:id_puerta', doors_ontrollers.get);
+app.delete('/admin/puerta/:id_puerta', doors_ontrollers.remove);
+
+app.put('/admin/usuario/:id_usuario', usuario_controllers.update);
+app.post('/admin/usuario/:', usuario_controllers.create);
+app.get('/admin/usuario/', usuario_controllers.list);
+app.get('/admin/usuario/:id_usuario', usuario_controllers.get);
+app.delete('/admin/usuario/:id_usuario', usuario_controllers.remove);
 
 // Connect our Express Application with Firebase Functions ecosystem!
 exports.api = functions.https.onRequest(app);

@@ -9,11 +9,11 @@ function puerta()
 
     function updatePuerta(puerta){
 
-    //UpdateUser
+    //UpdatePuerta
     }
 
     function deletePuerta(puerta){
-        //deleteuser
+        //deletepuerta
     }
 
 }
