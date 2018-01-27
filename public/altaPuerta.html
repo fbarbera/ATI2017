@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="./module/puerta.js"></script>
     <title>Welcome to Firebase Hosting</title>
 
     <!-- update the version number as needed -->
@@ -17,11 +18,12 @@
     <script defer src="/__/firebase/4.3.0/firebase-database.js"></script>
     <script defer src="/__/firebase/4.3.0/firebase-messaging.js"></script>
     <script defer src="/__/firebase/4.3.0/firebase-storage.js"></script>
+  
     <!-- <script defer src=".../node_modules/bootstrap/"/> -->
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
     <!--<script defer type="text/javascript" src="./functions/index.js"></script>-->
-    <script defer type="text/javascript" src="./module/puerta.js"></script>
+  
     <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 900px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
@@ -94,7 +96,7 @@
                           </div>
                           <div class="form-group">
                               <div class="col-md-12 text-center">
-                                  <button type="submit" class="btn btn-primary btn-lg" onclick="puerta()">Aceptar</button>
+                                  <button type="button" class="btn btn-primary btn-lg" onclick="abmPuerta()">Aceptar</button>
                               </div>
                           </div>
                       </fieldset>
@@ -104,7 +106,7 @@
       </div>
     </div>
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      /*document.addEventListener('DOMContentLoaded', function() {
         // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
         // // The Firebase SDK is initialized and available here!
         //
@@ -123,7 +125,7 @@
           console.error(e);
           document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
         }
-      });
+      });*/
     </script>
   </body>
 </html>
