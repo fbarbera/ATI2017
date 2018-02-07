@@ -1,34 +1,60 @@
 function main()
 {
+    var database = firebase.database();
+
+    var usuario = document.getElementById('listaUsu');
+    var id_usuario = usuario.options[usuario.selectedIndex].value;
+
+    var puerta = document.getElementById('listaPue');
+    var id_puerta = puerta.options[puerta.selectedIndex].value;
+
+    //alert(id_usuario);
+    //alert(id_puerta);
     
-    var usuario = document.getElementById('id_usuario').value;
-    var puerta = document.getElementById('id_puerta'.value);
+    /*var datos = new Object();
+	datos.listaUsu = usuario;
+	datos.listaPue = puerta;*/
 
 
-    var datos = new Object();
-	datos.id_usuario = usuario;
-	datos.id_puerta = puerta;
-    
+    var KeyUsu = "";
+    var KeyPue = "";
 
-    //alert(datos);
+    var rtaMainUsu = database.ref('Usuario');
+	rtaMainUsu.orderByChild("Apellido").equalTo(id_usuario).on('child_added',function(ss)
+	{
+		var rtaMainUsu = ss.val();
+		rtaMainUsu.key = ss.key;
 
-    alert('usuario' + datos.id_usuario);
+		KeyUsu = rtaMainUsu.key;
+		//alert(KeyUsu);
 
-    var usuario = new Schema({  
-    id_usuario: Number,
-    nombre: String,
 	});
 
-	var puerta = new Schema({  
-	    id_puerta: Number,    
-	    ubicacion: String,
-	    estado: Boolean,
+    var rtaMainPue = database.ref('Puerta');
+	rtaMainPue.orderByChild("Descripcion").equalTo(id_puerta).on('child_added',function(sss)
+	{
+		var rtaMainPue = sss.val();
+		rtaMainPue.key = sss.key;
+
+		KeyPue = rtaMainPue.Key;
+
+		alert(KeyPue);
+		
+		//console.log(KeyPue);
 	});
- 
- 	var usuarioPuerta = new Schema({  
-	    id_usuario: Number,    
-	    id_puerta: Number,
-	});
+	
+	alert(KeyPue);
+	alert(KeyUsu);
+	/*
+	if(KeyPue =  KeyUsu)
+	{
+		alert("ok");
+	}
+	else 
+	{
+		alert("NOOOOOO");
+	}
+	*/
 	
 }
 
